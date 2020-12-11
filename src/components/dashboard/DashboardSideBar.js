@@ -13,15 +13,19 @@ const DashboardSideBar = () => {
                 
                     <div className="dsidebar-2-menu-item">
                            <div className="">Icon</div>
-                           <div className="">Description</div>
+                           <div className="">Open Orders</div>
                     </div>
                     <div className="dsidebar-2-menu-item">
                            <div className="">Icon</div>
-                           <div className="">Description</div>
+                           <div className="">Watch List </div>
                     </div>
                     <div className="dsidebar-2-menu-item">
                            <div className="">Icon</div>
-                           <div className="">Description</div>
+                           <div className="">Markets</div>
+                    </div>
+                    <div className="dsidebar-2-menu-item">
+                           <div className="">Icon</div>
+                           <div className="">Gains / Losses</div>
                     </div>
                     
                     <div className="final">
