@@ -1,4 +1,8 @@
 import React from 'react'
+import ImportContactsIcon from '@material-ui/icons/ImportContacts';
+import ListIcon from '@material-ui/icons/List';
+import LocalConvenienceStoreIcon from '@material-ui/icons/LocalConvenienceStore';
+import ImportExportIcon from '@material-ui/icons/ImportExport';
 
 const DashboardSideBar = () => {
     return (
@@ -12,16 +16,20 @@ const DashboardSideBar = () => {
             <div className="dsidebar-2">
                 
                     <div className="dsidebar-2-menu-item">
-                           <div className="">Icon</div>
-                           <div className="">Description</div>
+                           <ImportContactsIcon/>
+                           <div className="">Open Orders</div>
                     </div>
                     <div className="dsidebar-2-menu-item">
-                           <div className="">Icon</div>
-                           <div className="">Description</div>
+                           <ListIcon/>
+                           <div className="">Watch List </div>
                     </div>
                     <div className="dsidebar-2-menu-item">
-                           <div className="">Icon</div>
-                           <div className="">Description</div>
+                           <LocalConvenienceStoreIcon/>
+                           <div className="">Markets</div>
+                    </div>
+                    <div className="dsidebar-2-menu-item">
+                           <ImportExportIcon/>
+                           <div className="">Gains / Losses</div>
                     </div>
                     
                     <div className="final">
