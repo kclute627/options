@@ -3,6 +3,8 @@ import ImportContactsIcon from '@material-ui/icons/ImportContacts';
 import ListIcon from '@material-ui/icons/List';
 import LocalConvenienceStoreIcon from '@material-ui/icons/LocalConvenienceStore';
 import ImportExportIcon from '@material-ui/icons/ImportExport';
+import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 
 const DashboardSideBar = () => {
     return (
@@ -16,24 +18,25 @@ const DashboardSideBar = () => {
             <div className="dsidebar-2">
                 
                     <div className="dsidebar-2-menu-item">
-                           <ImportContactsIcon/>
-                           <div className="">Open Orders</div>
+                           <div className="dsidebar-2-menu-icon"><ImportContactsIcon/></div>
+                           <div  className="dsidebar-2-menu-des">Open Orders</div>
                     </div>
                     <div className="dsidebar-2-menu-item">
-                           <ListIcon/>
-                           <div className="">Watch List </div>
+                        <div className="dsidebar-2-menu-icon"><ListIcon/></div>
+                           
+                           <div c className="dsidebar-2-menu-des">Watch List </div>
                     </div>
                     <div className="dsidebar-2-menu-item">
-                           <LocalConvenienceStoreIcon/>
-                           <div className="">Markets</div>
+                           <div className="dsidebar-2-menu-icon"><LocalConvenienceStoreIcon/></div>
+                           <div  className="dsidebar-2-menu-des">Markets</div>
                     </div>
                     <div className="dsidebar-2-menu-item">
-                           <ImportExportIcon/>
-                           <div className="">Gains / Losses</div>
+                         <div className="dsidebar-2-menu-icon"><ImportExportIcon/></div>
+                           <div  className="dsidebar-2-menu-des">Gains / Losses</div>
                     </div>
                     
                     <div className="final">
-                        <div className="">CLOSE ARROW</div>
+                        <div className=""><ArrowLeftIcon style={{ fontSize: 50 }} /></div>
                     </div>
                 
             </div>
