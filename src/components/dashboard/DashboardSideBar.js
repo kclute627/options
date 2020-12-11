@@ -4,12 +4,31 @@ const DashboardSideBar = () => {
     return (
         <div className='dsidebar'>
             <div className="dsidebar-1">
-                <div className="dsidebar-1-photo"></div>
+                <div className="dsidebar-1-photo">KC</div>
                 <div className='span'></div>
                 
 
             </div>
-            
+            <div className="dsidebar-2">
+                
+                    <div className="dsidebar-2-menu-item">
+                           <div className="">Icon</div>
+                           <div className="">Description</div>
+                    </div>
+                    <div className="dsidebar-2-menu-item">
+                           <div className="">Icon</div>
+                           <div className="">Description</div>
+                    </div>
+                    <div className="dsidebar-2-menu-item">
+                           <div className="">Icon</div>
+                           <div className="">Description</div>
+                    </div>
+                    
+                    <div className="final">
+                        <div className="">CLOSE ARROW</div>
+                    </div>
+                
+            </div>
             
         </div>
     )
