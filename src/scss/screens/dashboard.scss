@@ -59,13 +59,22 @@
     align-items: end;
 
     &-menu {
+        &-icon{
+            margin-left: 1rem;
+        }
+        &-des{
+            margin-right: 1rem;
+        }
       &-item {
         display: flex;
         height: 4rem;
         width: 100%;
 
         align-items: center;
-        justify-content: end;
+        justify-content: space-between;
+        
+
+        
 
         &:hover {
           cursor: pointer;
@@ -89,12 +98,17 @@
 }
 
 .final {
-  margin-top: 10rem;
+  margin-top: 7rem;
   align-items: center;
   justify-content: start;
+  align-self: start;
   height: 4rem;
-  width: 100%;
+  width: 45%;
   display: flex;
+  
+  & div{
+     
+  }
 
   &:hover {
     cursor: pointer;
