@@ -1,0 +1,41 @@
+.header {
+  background-color: black;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  height: 5rem;
+
+  &__right {
+    color: white;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    & ul {
+      list-style-type: none;
+      display: flex;
+
+      & li {
+        margin: 0 1rem;
+        cursor: pointer;
+        &:hover{
+            color: rgb(125, 125, 197);
+        }
+      }
+    }
+  }
+
+  &__left{
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+
+    &-1{
+        color: white;
+        font-size: 3rem;
+        font-weight: 700;
+    }
+  }
+}
