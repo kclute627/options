@@ -36,7 +36,7 @@ const DashboardSideBar = () => {
                     </div>
                     
                     <div className="final">
-                        <div className=""><ArrowLeftIcon style={{ fontSize: 50 }} /></div>
+                        <div className=""><ArrowLeftIcon style={{ fontSize: 45 }} /></div>
                     </div>
                 
             </div>
