@@ -7,6 +7,10 @@ import ArrowRightIcon from '@material-ui/icons/ArrowRight';
 import ArrowLeftIcon from '@material-ui/icons/ArrowLeft';
 
 const DashboardSideBar = () => {
+
+    const closeWindow = () => {
+        
+    }
     return (
         <div className='dsidebar'>
             <div className="dsidebar-1">
@@ -36,7 +40,7 @@ const DashboardSideBar = () => {
                     </div>
                     
                     <div className="final">
-                        <div className=""><ArrowLeftIcon style={{ fontSize: 50 }} /></div>
+                        <div className=""><ArrowLeftIcon style={{ fontSize: 50, marginLeft: '50%' }} onClick={closeWindow}/></div>
                     </div>
                 
             </div>
