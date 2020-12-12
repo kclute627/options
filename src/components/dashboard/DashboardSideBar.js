@@ -27,7 +27,7 @@ const DashboardSideBar = () => {
         <div className="dsidebar-1-photo">KC</div>
         <div className="span"></div>
       </div>
-      <div className="dsidebar-2">
+      <div className={!collapse ? "dsidebar-2" : "dsidebar-3"}>
         <div
           className={current === "Open" ? "dsidebar-2-menu-item active": "dsidebar-2-menu-item"}
           onMouseEnter={() => showText("Open Orders")}
