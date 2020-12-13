@@ -96,17 +96,17 @@ const DashboardSideBar = () => {
           </div>
         </div>
 
-        <div className={!collapse ? "final" : "final-1"}>
+        <div className={!collapse ? "final" : "final-1"} onClick={closeWindow}>
           <div className="">
             {!collapse ? (
               <ArrowLeftIcon
                 style={{ fontSize: 50, marginLeft: "50%" }}
-                onClick={closeWindow}
+                
               />
             ) : (
               <ArrowRightIcon
                 style={{ fontSize: 50, marginLeft: "10%" }}
-                onClick={closeWindow}
+                
               />
             )}
           </div>
