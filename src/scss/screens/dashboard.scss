@@ -47,7 +47,7 @@
       font-size: 2rem;
       justify-content: center;
       font-weight: 700;
-      
+
       align-items: center;
     }
   }
@@ -92,7 +92,7 @@
         }
       }
       &-des {
-        margin-right: .5rem;
+        margin-right: 0.5rem;
       }
       &-item {
         display: flex;
@@ -165,8 +165,6 @@
       border-bottom-right-radius: 125px;
       width: 4rem;
 
-      
-
       &:active {
         transform: scale(1.1);
       }
@@ -213,8 +211,6 @@
   border-top-left-radius: 125px;
   border-bottom-left-radius: 125px;
   padding-right: 1rem;
-  
- 
 }
 
 .span {
