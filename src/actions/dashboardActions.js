@@ -6,6 +6,7 @@ export const switchScreen = (newView) => dispatch => {
     dispatch({
         type: CURRENT_VIEW_REQUEST
     })
+    
     dispatch({
         type: CURRENT_VIEW,
         payload: newView,

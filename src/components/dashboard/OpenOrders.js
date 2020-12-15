@@ -3,7 +3,7 @@ import React from 'react'
 
 const OpenOrders = () => {
     return (
-        <div>
+        <div className="open">
             Open Orders 
         </div>
     )

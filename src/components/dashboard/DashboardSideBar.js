@@ -6,12 +6,16 @@ import LocalConvenienceStoreIcon from "@material-ui/icons/LocalConvenienceStore"
 import ImportExportIcon from "@material-ui/icons/ImportExport";
 import ArrowRightIcon from "@material-ui/icons/ArrowRight";
 import ArrowLeftIcon from "@material-ui/icons/ArrowLeft";
+import CircularProgress from "@material-ui/core/CircularProgress";
+import { useDispatch, useSelector } from "react-redux";
 import { switchScreen } from "../../actions/dashboardActions";
 
 const DashboardSideBar = () => {
   const [collapse, collapseHandler] = useState(false);
   const [text, textHandler] = useState("");
-  const [current, currentHandler] = useState("Open");
+
+  const dispatch = useDispatch();
+  const dashboard = useSelector((state) => state.dashboard);
 
   const closeWindow = () => {
     collapseHandler(!collapse);
@@ -22,6 +26,9 @@ const DashboardSideBar = () => {
   const hideText = () => {
     textHandler("");
   };
+
+  const { loading, currentView } = dashboard;
+
   return (
     <div className={!collapse ? "dsidebar" : "collapse"}>
       <div className='dsidebar-1'>
@@ -31,13 +38,17 @@ const DashboardSideBar = () => {
       <div className={!collapse ? "dsidebar-2" : "dsidebar-3"}>
         <div
           className={
-            current === "Open"
+            collapse && currentView === "open"
+              ? "collapse__item collapse__active"
+              : currentView === "open"
               ? "dsidebar-2-menu-item active"
+              : collapse
+              ? "collapse__item"
               : "dsidebar-2-menu-item"
           }
           onMouseEnter={() => showText("Open Orders")}
           onMouseLeave={() => hideText()}
-          onClick={switchScreen("open")}
+          onClick={() => dispatch(switchScreen("open"))}
         >
           <div className='dsidebar-2-menu-icon'>
             <ImportContactsIcon />
@@ -52,9 +63,18 @@ const DashboardSideBar = () => {
           </div>
         </div>
         <div
-          className='dsidebar-2-menu-item'
+          className={
+            collapse && currentView === "watch"
+              ? "collapse__item collapse__active"
+              : currentView === "watch"
+              ? "dsidebar-2-menu-item active"
+              : collapse
+              ? "collapse__item"
+              : "dsidebar-2-menu-item"
+          }
           onMouseEnter={() => showText("Watch List")}
           onMouseLeave={() => hideText()}
+          onClick={() => dispatch(switchScreen("watch"))}
         >
           <a className='dsidebar-2-menu-icon'>
             <ListIcon />{" "}
@@ -68,9 +88,18 @@ const DashboardSideBar = () => {
           </div>
         </div>
         <div
-          className='dsidebar-2-menu-item'
+          className={
+            collapse && currentView === "market"
+              ? "collapse__item collapse__active"
+              : currentView === "market"
+              ? "dsidebar-2-menu-item active"
+              : collapse
+              ? "collapse__item"
+              : "dsidebar-2-menu-item"
+          }
           onMouseEnter={() => showText("Markets")}
           onMouseLeave={() => hideText()}
+          onClick={() => dispatch(switchScreen("market"))}
         >
           <div className='dsidebar-2-menu-icon'>
             <LocalConvenienceStoreIcon />
@@ -78,14 +107,24 @@ const DashboardSideBar = () => {
           <span className={text === "Markets" && collapse ? "text" : "none"}>
             {text}
           </span>
+
           <div className={!collapse ? "dsidebar-2-menu-des" : "none"}>
             Markets
           </div>
         </div>
         <div
-          className='dsidebar-2-menu-item'
+          className={
+            collapse && currentView === "gains"
+              ? "collapse__item collapse__active"
+              : currentView === "gains"
+              ? "dsidebar-2-menu-item active"
+              : collapse
+              ? "collapse__item"
+              : "dsidebar-2-menu-item"
+          }
           onMouseEnter={() => showText("Gains and Losses")}
           onMouseLeave={() => hideText()}
+          onClick={() => dispatch(switchScreen("gains"))}
         >
           <div className='dsidebar-2-menu-icon'>
             <ImportExportIcon />

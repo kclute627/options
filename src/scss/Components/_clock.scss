@@ -3,4 +3,34 @@
     grid-column: 3/4;
     color: blue;
     font-size: 2rem;
+    margin-top: 3rem;
+
+
+}
+.clocks{
+    height: 15rem;
+    width: 100%;
+    outline: 2px solid black;
+
+
+    
+}
+.opendiv{
+    color: black;
+    height: 3rem;
+    width: 100%;
+    position: relative;
+   
+
+    
+}
+.opened{
+    position: absolute;
+    top: .72rem;
+    bottom: 0;
+    right: 8rem;
+    height: 1rem;
+    width: 1rem;
+        border-radius: 33rem;
+        background-color: rgb(4, 185, 13);
 }
