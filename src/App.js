@@ -3,8 +3,9 @@ import store from './store'
 import { Provider } from "react-redux";
 import Dashboard from "./screens/Dashboard";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-
+ require('dotenv').config()
 function App() {
+ 
   return (
     
       <div className="App">

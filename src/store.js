@@ -1,5 +1,6 @@
 import { createStore, combineReducers, applyMiddleware} from 'redux'
 import {dashboardReducer} from './reducers/dashboardReducer';
+import { stockDataReducer } from './reducers/stockDataReducer';
 import thunk from 'redux-thunk'
 import { composeWithDevTools } from "redux-devtools-extension";
 
@@ -9,7 +10,8 @@ import { composeWithDevTools } from "redux-devtools-extension";
 const middleware = [thunk]
 
 const reducer = combineReducers({
-    dashboard: dashboardReducer
+    dashboard: dashboardReducer,
+    stockData: stockDataReducer,
 })
 const store = createStore(
     reducer,
